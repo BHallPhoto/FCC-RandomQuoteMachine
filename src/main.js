@@ -1,6 +1,6 @@
 // eslint-disable-next-line
 $(document).ready(function() {
-    var dataUrl = "http://quotes.stormconsultancy.co.uk/random.json";
+    var dataUrl = "https://quotes.stormconsultancy.co.uk/random.json";
     function getJson(data) {
         $.ajax({
            dataType: "json",
