@@ -1,0 +1,89 @@
+/* font-family: 'Lancelot', cursive;
+font-family: 'Raleway', sans-serif; */
+
+body {
+    background-color: greenyellow;
+}
+.head {
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 3em;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.mainBox {
+    margin: 0 auto;
+    padding-top: 20vh;
+}
+.content {
+    font-size: 10px;
+}
+    .author {
+        padding-left: 5px;
+        text-align: left;
+    }
+    .quotedText {
+        text-align: center;
+    }
+    .quoteLink {
+        color: #333;
+        padding-right: 2px;
+    }
+    .content, .quoteLink {
+        font-size: 1em;
+        text-align: right;
+    }
+    .quoteLink:hover {
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+    }
+.jumbotron {
+    margin: 0 auto;
+    max-width: 500px;
+}
+.jumbotron .quotedText {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+/* Buttons */
+.buttons {
+    margin: auto;
+    display: block;
+    padding-bottom: 65px;
+}
+.button {
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #333;
+    outline: none;
+    font-size: 1em;
+    padding: 1px 18px 0 18px;
+    margin-top: 30px;
+    opacity: 1;
+    cursor: pointer;
+    height: 30px;
+    width: 90px;
+}
+.button:hover {
+    color: orange;
+}
+#tweet-quote, #facebook-quote {
+    float: left;
+    padding: 0px;
+    padding-top: 4px;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 5px;
+    height: 30px;
+    width: 90px;
+}
+#new-quote {
+    float: right;
+}
+    
+  
+      
+    
+    
