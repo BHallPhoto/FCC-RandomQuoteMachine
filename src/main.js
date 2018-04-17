@@ -12,20 +12,38 @@ $(document).ready(function() {
     }
 
     function parseData(data) {
-        console.log(data);
         $(".author").html(data.author);
         $(".quotedText").html(data.quote);
         $(".quoteLink").attr("href", data.permalink);
     }
 
+    var pickedColor = [];
+
+    function colorFade() {
+        var color = [];
+
+        for (var i = 0; i < 3; i++) {
+            var pickNum = Math.floor(Math.random() * 255);
+            color.push(pickNum);
+        }
+
+        pickedColor = color.toString();
+
+        $("body").css({
+            backgroundColor: "rgb(" + color[0] + ", " + color[1] + ", " + color[2] + ")"
+            
+        });
+    }
+
     $("#new-quote").on("click", function() {
         getJson();
+        colorFade();
     });
 
     $("#tweet-quote").on("click", function() {
         var author = document.querySelector(".author").innerText,
             quote = document.querySelector(".quotedText").innerText
-
+        
         window.open("https://www.twitter.com/intent/tweet?text=" + " \"" + quote + "\"  ~ " + author);
     })
 
