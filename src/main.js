@@ -17,8 +17,6 @@ $(document).ready(function() {
         $(".quoteLink").attr("href", data.permalink);
     }
 
-    var pickedColor = [];
-
     function colorFade() {
         var color = [];
 
@@ -27,11 +25,8 @@ $(document).ready(function() {
             color.push(pickNum);
         }
 
-        pickedColor = color.toString();
-
         $("body").css({
             backgroundColor: "rgb(" + color[0] + ", " + color[1] + ", " + color[2] + ")"
-            
         });
     }
 
